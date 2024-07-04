@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "212767702179",
+    "project_id": "shree-krishna-6c933",
+    "storage_bucket": "shree-krishna-6c933.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212767702179:android:661b38d05598d0187dd316",
+        "android_client_info": {
+          "package_name": "co.shree.krishna.shreekrishna"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA99FmSEs2CAOwCRoxFDIZRPsuwa3QYTFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
