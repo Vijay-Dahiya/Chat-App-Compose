@@ -27,3 +27,11 @@ data class ChatUser(
     val number: String? = ""
 
 )
+
+data class Message(
+    val sendBy : String? ="",
+    val message: String? ="",
+    val timeStamp: String? = ""
+
+
+)

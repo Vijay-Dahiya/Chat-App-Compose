@@ -16,6 +16,7 @@ import co.shree.krishna.shreekrishna.screens.ChatListScreen
 import co.shree.krishna.shreekrishna.screens.LoginScreen
 import co.shree.krishna.shreekrishna.screens.ProfileScreen
 import co.shree.krishna.shreekrishna.screens.SignUpScreen
+import co.shree.krishna.shreekrishna.screens.SingleChatScreen
 import co.shree.krishna.shreekrishna.screens.StatusScreen
 import co.shree.krishna.shreekrishna.ui.theme.ShreeKrishnaTheme
 import co.shree.krishna.shreekrishna.viewModel.LCViewModel
@@ -33,7 +34,6 @@ import dagger.hilt.android.AndroidEntryPoint
      object SingleStatus : DestinationScreen("singleStatus/{statusId}") {
          fun createRoute(id : String) = "singleStatus/$id"
      }
-
  }
  @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -68,6 +68,13 @@ class MainActivity : ComponentActivity() {
 
             composable(DestinationScreen.ChatList.route) {
                 ChatListScreen(vm = viewModel, navController = navController)
+            }
+
+            composable(DestinationScreen.SingleChat.route) {
+                val chatId = it.arguments?.getString("chatId")
+                chatId?.let {
+                    SingleChatScreen(vm = viewModel, navController = navController,chatId)
+                }
             }
 
             composable(DestinationScreen.StatusList.route) {

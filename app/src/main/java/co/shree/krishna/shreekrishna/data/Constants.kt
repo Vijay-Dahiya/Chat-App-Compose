@@ -1,6 +1,5 @@
 package co.shree.krishna.shreekrishna.data
 
-class Constants {
-}
-
 const val USER_NODE = "User"
+const val CHATS = "chats"
+const val MESSAGE = "message"
